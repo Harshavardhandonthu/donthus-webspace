@@ -1,8 +1,8 @@
 projects = [
     {
-        'title': 'Smart Resume Analyzer',
-        'description': 'A Flask app that parses resumes, matches skills to jobs, and gives score-based recommendations.',
-        'github': 'https://github.com/Harshavardhandonthu/smart-resume-analyzer',
+        'title': 'Smart ATS Resume Analyzer',
+        'description': 'A Flask-based AI-powered Applicant Tracking System that analyzes resumes, matches them with job descriptions, and provides match scores, skill insights, and learning suggestions.',
+        'github': 'https://github.com/Harshavardhandonthu/smart-ats.git',
         'demo': ''
     },
     {
