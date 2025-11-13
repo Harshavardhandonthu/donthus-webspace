@@ -1,0 +1,87 @@
+/* Root theme colors */
+:root{
+  --royal-blue: #0b5ed7;
+  --light-bg: #f8fafc;
+  --soft-border: #e5e7eb;
+  --text-dark: #1f2937;
+}
+
+/* Color utilities */
+.text-royal-blue{ color: var(--royal-blue); }
+.bg-royal-blue{ background-color: var(--royal-blue); }
+
+/* Global styling */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: white;
+}
+
+/* Section spacing */
+section{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Card hover animation */
+.hover-card{
+  transition: all 0.25s ease;
+}
+.hover-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+.btn-primary{
+  background-color: var(--royal-blue);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  transition: all 0.25s ease;
+}
+.btn-primary:hover{
+  background-color: #0a53c1;
+}
+
+/* Certificate thumbnail */
+.cert-img{
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+}
+.cert-img:hover{
+  transform: scale(1.03);
+}
+
+/* Project cards */
+.project-card{
+  border: 1px solid var(--soft-border);
+  border-radius: 0.7rem;
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+}
+.project-card:hover{
+  border-color: var(--royal-blue);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+/* AI sections */
+pre#analyzeResult{
+  max-height: 200px;
+  overflow:auto;
+  background: var(--light-bg);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--soft-border);
+}
+
+/* Mobile fixes */
+@media (max-width: 640px){
+  header{
+    padding: 3rem 1rem;
+  }
+  nav .space-x-4{
+    display: none;
+  }
+}
